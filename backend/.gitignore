@@ -1,0 +1,13 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+/generated/prisma
+# Existing entries
+node_modules
+.env
+
+# Add Redis files
+dump.rdb
+*.rdb
+redis.log

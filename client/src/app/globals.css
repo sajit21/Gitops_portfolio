@@ -1,0 +1,108 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap");
+
+/* Tailwind Directives */
+@import "tailwindcss";
+
+/* Base Styles */
+body {
+  font-family: "Jost", sans-serif;
+}
+
+/* Global Variables */
+:root {
+  --color-primary: #014F86;
+  --color-primary-light: #0267ad;
+  --color-primary-dark: #013a63;
+
+  --color-secondary: #2A6F97;
+  --color-secondary-light: #3d85b3;
+  --color-secondary-dark: #1e5675;
+
+  --color-tertiary: #468FAF;
+  --color-tertiary-light: #5fa3c1;
+  --color-tertiary-dark: #2f6f8a;
+
+  --color-success: #22c55e;
+  --color-danger: #ef4444;
+  --color-warning: #facc15;
+  --color-info: #0ea5e9;
+}
+
+/* Utility Classes */
+@layer utilities {
+  /* Background Colors */
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-primary-light {
+    background-color: var(--color-primary-light);
+  }
+  .bg-primary-dark {
+    background-color: var(--color-primary-dark);
+  }
+
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+  .bg-secondary-light {
+    background-color: var(--color-secondary-light);
+  }
+  .bg-secondary-dark {
+    background-color: var(--color-secondary-dark);
+  }
+
+  .bg-tertiary {
+    background-color: var(--color-tertiary);
+  }
+
+  /* Text Colors */
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+  .text-tertiary {
+    color: var(--color-tertiary);
+  }
+
+  /* Border Colors */
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+  .border-secondary {
+    border-color: var(--color-secondary);
+  }
+  .border-tertiary {
+    border-color: var(--color-tertiary);
+  }
+
+  /* Hover Variants */
+  .hover\:text-primary:hover {
+    color: var(--color-primary);
+  }
+  .hover\:text-secondary:hover {
+    color: var(--color-secondary);
+  }
+
+  .hover\:bg-primary:hover {
+    background-color: var(--color-primary);
+  }
+  .hover\:bg-secondary:hover {
+    background-color: var(--color-secondary);
+  }
+
+  .hover\:border-primary:hover {
+    border-color: var(--color-primary);
+  }
+
+  /* Group Hover */
+  .group:hover .group-hover\:text-primary {
+    color: var(--color-primary);
+  }
+
+  .group:hover .group-hover\:bg-primary {
+    background-color: var(--color-primary);
+  }
+}
