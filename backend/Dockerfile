@@ -1,4 +1,4 @@
-# Stage 1 — Install ALL dependencies & generate Prisma
+# Stage 1 — Install ALL dependencies & generate Prisma file
 FROM node:22-alpine AS builder
 # Alpine needs libc6-compat to properly run Prisma binary engines
 RUN apk add --no-cache libc6-compat
