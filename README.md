@@ -1,4 +1,4 @@
-## Nir Kshetri Portfolio
+## NK Portfolio
 
 A personal portfolio website with a Content Management System (CMS) where the admin can perform CRUD operations on videos, articles, publications, and more. The website also displays the admin’s profile on the frontend.
 
