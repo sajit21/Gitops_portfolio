@@ -1,5 +1,5 @@
 import cloudinary from "../config/cloudinary.js";
-import { PrismaClient } from "@prisma/client";  // prism removed here
+import { PrismaClient } from "@prisma/client";  // prism removed 
 const prisma = new PrismaClient();
 
 export const createArticle = async (req, res) => {
